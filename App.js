@@ -60,28 +60,189 @@ export default function App() {
           minim veniam.
         </Text>
       </View>
-      <View>
-        <View>
+      <View
+        style={{
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "center",
+          backgroundColor: "#f2fcff",
+          elevation: 4,
+          shadowOffset: {
+            width: 1,
+            height: 10,
+          },
+          shadowColor: "#abcfd9",
+          shadowOpacity: 0.4,
+          shadowRadius: 4,
+          marginTop: 50,
+        }}
+      >
+        <View style={{ margin: 32 }}>
           <Text
             style={{
-              fontSize: 16,
-              fontWeight: "400",
+              fontSize: 18,
+              fontWeight: "bold",
               color: "grey",
               marginBottom: 10,
               marginTop: 10,
+              letterSpacing: 1.5,
             }}
           >
             Repos
           </Text>
           <Text
             style={{
-              fontSize: 16,
-              fontWeight: "400",
+              fontSize: 22,
+              fontWeight: "600",
               marginBottom: 10,
               letterSpacing: 1.5,
               marginTop: 10,
+              textAlign: "center",
             }}
-          >8</Text>
+          >
+            8
+          </Text>
+        </View>
+        <View style={{ margin: 32 }}>
+          <Text
+            style={{
+              fontSize: 18,
+              fontWeight: "bold",
+              color: "grey",
+              letterSpacing: 1.5,
+              marginBottom: 10,
+              marginTop: 10,
+            }}
+          >
+            Followers
+          </Text>
+          <Text
+            style={{
+              fontSize: 22,
+              fontWeight: "600",
+              marginBottom: 10,
+              letterSpacing: 1.5,
+              marginTop: 10,
+              textAlign: "center",
+            }}
+          >
+            3938
+          </Text>
+        </View>
+        <View style={{ margin: 32 }}>
+          <Text
+            style={{
+              fontSize: 18,
+              fontWeight: "bold",
+              letterSpacing: 1.5,
+              color: "grey",
+              marginBottom: 10,
+              marginTop: 10,
+            }}
+          >
+            Following
+          </Text>
+          <Text
+            style={{
+              fontSize: 22,
+              fontWeight: "600",
+              marginBottom: 10,
+              letterSpacing: 1.5,
+              marginTop: 10,
+              textAlign: "center",
+            }}
+          >
+            9
+          </Text>
+        </View>
+      </View>
+      <View style={{ flexDirection: "row", marginTop: 60 }}>
+        <Image
+          source={require("./assets/map.png")}
+          style={{ height: 70, width: 70, borderRadius: 100 }}
+        />
+        <View
+          style={{
+            marginLeft: 30,
+            marginTop: 20,
+          }}
+        >
+          <Text
+            style={{
+              fontSize: 16,
+              fontWeight: "400",
+              letterSpacing: 2,
+            }}
+          >
+            San Francisco
+          </Text>
+        </View>
+      </View>
+      <View style={{ flexDirection: "row", marginTop: 18 }}>
+        <Image
+          source={require("./assets/link.png")}
+          style={{ height: 70, width: 70, borderRadius: 100 }}
+        />
+        <View
+          style={{
+            marginLeft: 30,
+            marginTop: 20,
+          }}
+        >
+          <Text
+            style={{
+              fontSize: 16,
+              fontWeight: "400",
+              letterSpacing: 2,
+            }}
+          >
+            https://github.blog
+          </Text>
+        </View>
+      </View>
+      <View style={{ flexDirection: "row", marginTop: 18 }}>
+        <Image
+          source={require("./assets/twitter.png")}
+          style={{ height: 70, width: 70, borderRadius: 100 }}
+        />
+        <View
+          style={{
+            marginLeft: 30,
+            marginTop: 20,
+          }}
+        >
+          <Text
+            style={{
+              fontSize: 16,
+              fontWeight: "400",
+              letterSpacing: 2,
+              color: "grey",
+            }}
+          >
+            not available
+          </Text>
+        </View>
+      </View>
+      <View style={{ flexDirection: "row", marginTop: 18 }}>
+        <Image
+          source={require("./assets/github.png")}
+          style={{ height: 70, width: 70, borderRadius: 100 }}
+        />
+        <View
+          style={{
+            marginLeft: 30,
+            marginTop: 20,
+          }}
+        >
+          <Text
+            style={{
+              fontSize: 16,
+              fontWeight: "400",
+              letterSpacing: 2,
+            }}
+          >
+            @github
+          </Text>
         </View>
       </View>
     </SafeAreaView>
